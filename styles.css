@@ -1,0 +1,322 @@
+*{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding:0px;
+    margin:0px;
+    box-sizing:border-box;
+    cursor:pointer;
+}
+#container{
+    width:100%;
+    height:100vh;
+}
+#menu{
+   width: 100%;
+   height:180px;
+   background-color: #ffbd08;  
+}
+.up{
+    width:80%;
+    height:100px;
+    margin: 0 auto;
+}
+.up ul{
+    list-style: none;
+    margin-top:0px;
+    margin-left:0px;
+}
+.up ul li{
+    display: inline-block;
+    padding:20px;
+}
+.up ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color:black;
+    text-transform: capitalize;
+    transition: 1s;
+}
+.up ul li a{
+vertical-align: middle;
+}
+.up ul li a:hover{
+    font-size: 40px;
+}
+.ul li a logo{
+    padding-right: 20px;
+    width:57px; 
+    height:32px;
+    transition: opacity 2s;
+}
+.logo:hover{
+    opacity:0.5;
+}
+.logo:active{
+    opacity: 0.3;
+}
+.down{
+    height: 80px;
+    width: 80%;
+    margin: 0 auto;
+}
+.search{
+    height: 40px;
+    width: 560px;
+    background-color:white;
+    margin-left:245px;
+    border-radius: 10px;
+}
+.search input{
+    width: 500px;
+    height:35px;
+    border: 0px;
+    padding-left:20px;
+    font-size: 15px;
+    border-radius: 10px;
+}
+.search button{
+    border:0px;
+    border-radius: 8px;
+
+}
+.search button i{
+    width:20px;
+    height: 23px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+#banner{
+    background-image: url("https://www.thukieng.com/wp-content/uploads/2016/02/tuoi-tho-cac-giong-cho-canh-pho-bien-o-viet-nam.jpg");
+    width: 100%;
+    height: 420px;
+    margin-top:40px;
+    display:flex;
+    padding:0px 200px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#banner .box-lef ,#banner .box-righ{
+    width:50%;
+}
+#banner .box-left h2{
+    font-size: 40px;
+    margin-top:75px;
+    color:rgb(19, 124, 107);
+
+}
+#banner .box-left p{
+    font-size: 20px;
+}
+#banner .box-left button{
+    font-size: 20px;
+    color:white;
+    width:170px;
+    height: 60px;
+    background-color: rgb(19, 100, 93);
+    border-radius: 15px;
+    margin-top: 50px;
+    border:none;
+    outline:none;
+    font-weight: bold;
+    transition: 0.4s;
+}
+#banner .box-left button:hover{
+    background-color: orange;
+}
+#banner .box-right{
+    padding-left: 500px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#banner .box-right img{
+    margin: 0px 5px;
+    animation: animation 3s infinite linear;
+}
+#banner .box-right img:hover{
+    opacity: 0.2%;
+}
+#banner .box-right img:nth-child(1){
+    animation-delay: 0.5s;
+}
+#banner .box-right img:nth-child(2){
+    animation-delay: 1s;
+}
+@keyframes animation{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+#wrp-product{
+    padding-top: 116px;
+    padding-bottom:78px;
+    padding-left: 134px;
+    padding-right: 134px;
+}
+#wrp-product h2{
+    text-align: center;
+    margin-bottom: 100px;
+    font-size: 32px;
+    color:rgb(47, 45, 49);
+    text-transform: uppercase;
+}
+#list-product img{
+width:300px;
+height:200px;
+}
+#list-product{
+    display: flex;
+    list-style:none ;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#list-product .item{
+    width:300px;
+    height: 350px;
+    background: rgb(245, 199, 72);
+    border-radius:10px;
+    margin-bottom:50px;
+}
+#list-product .item img{
+    display:block;
+    margin: 0px auto;
+    margin-top: 15px;
+}
+
+#list-product .item .chungloai{
+    text-align: center;
+    color: black;
+    font-weight:bold;
+    margin-top: 20px;
+}
+
+#list-product .item .mota{
+    text-align: center;
+    color: rgb(30, 61, 35);
+    font-weight:bold;
+    margin-top: 20px;
+}
+#list-product .item .giaban{
+    text-align: center;
+    color: black;
+    margin-top: 15px;
+}
+.list-page{
+    width:50%;
+    margin: 0px auto;
+}
+.list-page{
+    display:flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+.list-page .item{
+    margin: 0px 15px;
+    width:37px;
+    height:37px;
+    background: rgb(9, 77, 9);
+    border-radius: 50%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.list-page .item a{
+color:aliceblue;
+text-decoration: none;
+}
+#saleoff{
+    width:100%;
+    display: flex;
+    height: 300px;
+    text-transform: uppercase;
+}
+#saleoff .box-left h1{
+padding-top: 38px;
+font-weight: bold;
+}
+#saleoff .box-left ,#saleoff .box-right{
+    width:50%;
+}
+#saleoff .box-left{
+    background:#f5ca56;
+    text-align: center;
+    min-height: 300px;
+    margin-top: 20px;
+    
+}
+#saleoff .box-left span:nth-child(1)
+{
+    color:rgb(117, 5, 5);
+    font-size: 30px;
+}
+    
+#saleoff .box-left span:nth-child(2)
+{
+    color:rgb(10, 151, 10);
+    font-size: 50px;
+    margin-top: 10px;
+}
+#saleoff .box-right{
+    background-image: url(https://www.thukieng.com/wp-content/uploads/2016/02/ban-nen-nuoi-giong-cho-nao.jpg);
+}
+#footer{
+    width: 100%;
+    background: #2f5c35;
+    height:300px;
+    margin-top: 30px;
+    padding: 0px 60px;
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-around;
+   
+}
+#footer .box{
+    width:250px;
+    line-height: 50px;
+}
+#footer .box h3{
+    text-decoration: none;
+    color: #ffbd08;
+    font-size: 35px;
+    text-transform: uppercase;
+}
+#footer .item a{
+    color:aliceblue;
+    text-decoration: none;
+    font-size: 30px;
+    align-content: space-around;
+}
+#footer .box form input{
+width:290px;
+height:50px;
+background: transparent;
+padding-left: 20px;
+display:flex;
+}
+.classbox{
+    font-size: 20px;
+    
+}
+#classbox form{
+    width:50px;
+    height:30px;
+}
+input{
+    width:100%;
+    height:30px;
+    margin-top: 10px;
+    display: inline-block;
+}
+button{
+    display:inline-block
+}
